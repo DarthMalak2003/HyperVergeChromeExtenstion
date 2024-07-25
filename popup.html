@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Notice Board</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Digital Notice Board</h1>
+
+        <!-- Google Slide Integration -->
+        <div class="widget">
+            <h2>Google Slide</h2>
+            <iframe
+                src="https://docs.google.com/presentation/d/e/2PACX-1vSpcgO0uYw2tjPFz2w-l439pNnhFHe4mxlYuYU3k3KzsBLuch8b9OZS6hZ4Zt6LkZ1LLIXE8WFJQhY1/embed?start=false&loop=false&delayms=3000"
+                frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true"
+                webkitallowfullscreen="true"></iframe>
+        </div>
+
+        <div class="widget">
+            <h2>Pomodoro Timer</h2>
+            <div id="timer">
+                <div id="time-display">
+                    <span id="minutes">25</span>:<span id="seconds">00</span>
+                </div>
+                <div id="progress-container">
+                    <div id="progress-bar"></div>
+                </div>
+            </div>
+            <div id="controls">
+                <button id="start" class="btn">Start</button>
+                <button id="stop" class="btn">Stop</button>
+                <button id="reset" class="btn">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
